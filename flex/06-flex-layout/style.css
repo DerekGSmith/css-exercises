@@ -1,20 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
   width: 600px;
 }
 
+li {
+  list-style-type: none;
+  color: black;
+}
+
+li a {
+  color: rgb(88, 85, 85);
+  text-decoration: none;
+}
+
 button {
   font-family: Roboto, sans-serif;
-  border: none;
-  border-radius: 8px;
+  font-size: 13.5px;
+  border: 4px white;
+  border-radius: 12px;
   background: #eee;
 }
 
@@ -24,4 +37,70 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+.header {
+  display: flex;
+}
+
+.header ul.right-links {
+  display: flex;
+  margin-left: auto;
+}
+
+.header ul.left-links {
+  display: flex;
+}
+
+.left-links {
+  padding: 8px;
+  margin: 8px;
+  gap: 8px;
+}
+
+.right-links {
+  padding: 8px;
+  margin: 8px;
+  gap: 8px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.main-image {
+  display: flex;
+  flex: 1;
+}
+
+.input {
+  display: flex;
+}
+
+.buttons {
+  display: flex;
+  padding: 4px;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-color: #eeeeee;
+  margin-top: auto;
+}
+
+.footer .left-links {
+  display: flex;
+  color: gray;
+}
+
+.footer .right-links {
+  display: flex;
+  margin-left: auto;
+  color: gray;
 }
